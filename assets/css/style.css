@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: Lato, sans-serif;
+}
+.d-flex {
+    display: flex;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal a{
+    color: #17a1e2;
+    text-decoration: none;
+}
+
+.modal-content {
+    max-width: 713px;
+    min-height: 451px;
+    background-color: #fff;
+    color: #707070;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 28px;
+    position: relative;
+}
+
+.modal-content .left img {
+    display: block;
+}
+
+.modal-content .right {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content .right .logo {
+    margin-bottom: 10px;
+}
+
+.modal-content .right .logo + p {
+    margin-bottom: 20px;
+}
+
+.modal-content .right form {
+    padding: 0;
+    position: relative;
+    width: 389px;
+    border-radius: 30px;
+    height: 50px;
+    border: 1px solid #17a1e2;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.modal-content .right form input[type="email"]{
+    border: none;
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 30px;
+    outline: none;
+    width: calc(100% - 170px);
+    padding: 0 20px;
+    font-family: Lato, sans-serif;
+}
+
+.modal-content .right form button[type="submit"]{
+    border: none;
+    background-color: #17a1e2;
+    float: right;
+    height: 50px;
+    width: 130px;
+    line-height: 50px;
+    border-radius: 30px;
+    outline: none;
+    font-family: Lato, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-content .close {
+    width: 12px;
+    height: 13px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content .close img {
+    display: block;
+}
